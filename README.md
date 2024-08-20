@@ -31,34 +31,35 @@ Follow these steps to set up the project:
 
 Install the required Python libraries:
 
-```bash
-pip install -r requirements.txt
+  ```bash
+  pip install -r requirements.txt
 
 
 Alternatively, if you are using Google Colab, you can install the libraries using:
 
-python
-```bash
-!pip install gradio groq-api openai-whisper gtts
+
+  ```bash
+  !pip install gradio groq-api openai-whisper gtts
 
 Set Up Groq API Key:
 
 Add your Groq API key to the environment variables:
 
-```bash
-export GROQ_API_KEY='your_groq_api_key'
+  ```bash
+  export GROQ_API_KEY='your_groq_api_key'
 
 In Google Colab, you can set the API key using:
 
-```python
-import os
-os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
+  ```python
+  import os
+  os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
 
 Usage
 To start the chatbot, run the main script:
 
-```python
-python app.py
+  ```python
+  python app.py
+
 Or in Google Colab:
 
 Copy the script to a code cell and execute.
@@ -72,12 +73,12 @@ Uploading Audio: Upload a pre-recorded audio file. The chatbot will transcribe t
 
 Project Structure
 
-```bash
-voice-to-voice-chatbot/
-├── app.py                 # Main script to run the chatbot
-├── requirements.txt       # List of Python dependencies
-├── README.md              # Project documentation
-└── .gitignore             # Git ignore file
+  ```bash
+  voice-to-voice-chatbot/
+  ├── app.py                 # Main script to run the chatbot
+  ├── requirements.txt       # List of Python dependencies
+  ├── README.md              # Project documentation
+  └── .gitignore             # Git ignore file
 
 Troubleshooting
 
