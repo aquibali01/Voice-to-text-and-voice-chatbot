@@ -28,16 +28,12 @@ Follow these steps to set up the project:
    cd voice-to-voice-chatbot
 
 **Install Dependencies:**
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/your-username/voice-to-voice-chatbot.git
-   cd voice-to-voice-chatbot
 
 Install the required Python libraries:
 
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+
 
 
 Alternatively, if you are using Google Colab, you can install the libraries using:
