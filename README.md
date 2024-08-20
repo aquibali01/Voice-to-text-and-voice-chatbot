@@ -27,60 +27,70 @@ Follow these steps to set up the project:
    git clone https://github.com/your-username/voice-to-voice-chatbot.git
    cd voice-to-voice-chatbot
 
-Install Dependencies:
+**Install Dependencies:**
 
 Install the required Python libraries:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
+
+
 Alternatively, if you are using Google Colab, you can install the libraries using:
 
 python
-Copy code
+```bash
 !pip install gradio groq-api openai-whisper gtts
+
 Set Up Groq API Key:
 
 Add your Groq API key to the environment variables:
 
-bash
-Copy code
+```bash
 export GROQ_API_KEY='your_groq_api_key'
+
 In Google Colab, you can set the API key using:
 
-python
-Copy code
+```python
 import os
 os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
+
 Usage
 To start the chatbot, run the main script:
 
-python
-Copy code
+```python
 python app.py
 Or in Google Colab:
 
 Copy the script to a code cell and execute.
+
 The Gradio interface will launch, allowing you to interact with the chatbot.
 Interacting with the Chatbot
+
 Using Microphone: Speak directly into the microphone. The chatbot will transcribe your speech, generate a response, and play it back as audio.
+
 Uploading Audio: Upload a pre-recorded audio file. The chatbot will transcribe the audio, generate a response, and convert the response back to speech.
+
 Project Structure
-bash
-Copy code
+
+```bash
 voice-to-voice-chatbot/
 ├── app.py                 # Main script to run the chatbot
 ├── requirements.txt       # List of Python dependencies
 ├── README.md              # Project documentation
 └── .gitignore             # Git ignore file
+
 Troubleshooting
+
 Common Issues
-ModuleNotFoundError: Ensure you have installed the correct version of the Whisper module with !pip install -U openai-whisper.
+
+ModuleNotFoundError: Ensure you have installed the correct version of the Whisper module with !pip install -U openai-whisper
+
 Groq API Key Error: Double-check your API key and ensure it is set in the environment variables correctly.
 Logging and Debugging
-Add print statements or use Python's built-in logging library for debugging if the chatbot isn't working as expected.
+
 
 Contributing
+
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request with your changes.
 
 License
