@@ -27,39 +27,37 @@ Follow these steps to set up the project:
    git clone https://github.com/your-username/voice-to-voice-chatbot.git
    cd voice-to-voice-chatbot
 
-**Install Dependencies:**
+2.**Install Dependencies:**
 
 Install the required Python libraries:
 
-   ```bash
-   pip install -r requirements.txt
-
-
+    ```bash
+    pip install -r requirements.txt```
 
 Alternatively, if you are using Google Colab, you can install the libraries using:
 
 
-  ```bash
-  !pip install gradio groq-api openai-whisper gtts
+    ```bash
+    !pip install gradio groq-api openai-whisper gtts
 
 Set Up Groq API Key:
 
 Add your Groq API key to the environment variables:
 
-  ```bash
-  export GROQ_API_KEY='your_groq_api_key'
+    ```bash
+    export GROQ_API_KEY='your_groq_api_key'
 
 In Google Colab, you can set the API key using:
 
-  ```python
-  import os
-  os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
+    ```python
+    import os
+    os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
 
 Usage
 To start the chatbot, run the main script:
 
-  ```python
-  python app.py
+    ```python
+    python app.py
 
 Or in Google Colab:
 
@@ -72,28 +70,30 @@ Using Microphone: Speak directly into the microphone. The chatbot will transcrib
 
 Uploading Audio: Upload a pre-recorded audio file. The chatbot will transcribe the audio, generate a response, and convert the response back to speech.
 
-Project Structure
+**Project Structure**
 
-  ```bash
-  voice-to-voice-chatbot/
-  ├── app.py                 # Main script to run the chatbot
-  ├── requirements.txt       # List of Python dependencies
-  ├── README.md              # Project documentation
-  └── .gitignore             # Git ignore file
+    ```bash
+    voice-to-voice-chatbot/
+    ├── app.py                 # Main script to run the chatbot
+    ├── requirements.txt       # List of Python dependencies
+    ├── README.md              # Project documentation
+    └── .gitignore             # Git ignore file
 
-Troubleshooting
+**Troubleshooting**
 
 Common Issues
 
-ModuleNotFoundError: Ensure you have installed the correct version of the Whisper module with !pip install -U openai-whisper
+ModuleNotFoundError: Ensure you have installed the correct version of the Whisper module with 
+
+    ```bash
+    !pip install -U openai-whisper
 
 Groq API Key Error: Double-check your API key and ensure it is set in the environment variables correctly.
-Logging and Debugging
 
 
-Contributing
+**Contributing**
 
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request with your changes.
 
-License
+**License**
 This project is licensed under the MIT License. See the LICENSE file for details.
