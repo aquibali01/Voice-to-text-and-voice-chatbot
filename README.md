@@ -23,7 +23,7 @@ Follow these steps to set up the project:
 
 1. **Clone the Repository:**
 
-   ```bash
+   ```
    git clone https://github.com/your-username/voice-to-voice-chatbot.git
    cd voice-to-voice-chatbot
 
@@ -31,32 +31,32 @@ Follow these steps to set up the project:
 
 Install the required Python libraries:
 
-    ```bash
+    ```
     pip install -r requirements.txt```
 
 Alternatively, if you are using Google Colab, you can install the libraries using:
 
 
-    ```bash
+    ```
     !pip install gradio groq-api openai-whisper gtts
 
 Set Up Groq API Key:
 
 Add your Groq API key to the environment variables:
 
-    ```bash
+    ```
     export GROQ_API_KEY='your_groq_api_key'
 
 In Google Colab, you can set the API key using:
 
-    ```python
+    ```
     import os
     os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
 
 Usage
 To start the chatbot, run the main script:
 
-    ```python
+    ```
     python app.py
 
 Or in Google Colab:
@@ -72,7 +72,7 @@ Uploading Audio: Upload a pre-recorded audio file. The chatbot will transcribe t
 
 **Project Structure**
 
-    ```bash
+    ```
     voice-to-voice-chatbot/
     ├── app.py                 # Main script to run the chatbot
     ├── requirements.txt       # List of Python dependencies
