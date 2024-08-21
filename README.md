@@ -23,41 +23,35 @@ Follow these steps to set up the project:
 
 1. **Clone the Repository:**
 
-   ```
    git clone https://github.com/your-username/voice-to-voice-chatbot.git
    cd voice-to-voice-chatbot
 
-2.**Install Dependencies:**
+2. **Install Dependencies:**
 
 Install the required Python libraries:
-
-    ```
-    pip install -r requirements.txt```
+    
+    pip install -r requirements.txt
 
 Alternatively, if you are using Google Colab, you can install the libraries using:
 
-
-    ```
     !pip install gradio groq-api openai-whisper gtts
 
 Set Up Groq API Key:
 
 Add your Groq API key to the environment variables:
 
-    ```
     export GROQ_API_KEY='your_groq_api_key'
 
 In Google Colab, you can set the API key using:
 
-    ```
     import os
     os.environ['GROQ_API_KEY'] = 'your_groq_api_key'
 
 Usage
+
 To start the chatbot, run the main script:
 
-    ```
-    python app.py
+    python voice_to_voice_chatbot.py
 
 Or in Google Colab:
 
@@ -72,9 +66,8 @@ Uploading Audio: Upload a pre-recorded audio file. The chatbot will transcribe t
 
 **Project Structure**
 
-    ```
     voice-to-voice-chatbot/
-    ├── app.py                 # Main script to run the chatbot
+    ├── voice_to_voice_chatbot.py  # Main script to run the chatbot
     ├── requirements.txt       # List of Python dependencies
     ├── README.md              # Project documentation
     └── .gitignore             # Git ignore file
@@ -85,7 +78,6 @@ Common Issues
 
 ModuleNotFoundError: Ensure you have installed the correct version of the Whisper module with 
 
-    ```bash
     !pip install -U openai-whisper
 
 Groq API Key Error: Double-check your API key and ensure it is set in the environment variables correctly.
