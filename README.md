@@ -24,9 +24,10 @@ Follow these steps to set up the project:
 1. **Clone the Repository:**
 
    git clone https://github.com/aquibali01/voice-to-voice-chatbot.git
+   
    cd voice-to-voice-chatbot
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 
 Install the required Python libraries:
     
